@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <header>
+      <Header />
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/contact">Contact</router-link>
@@ -16,14 +17,21 @@
 
 <script>
 import Footer from "@/components/Footer.vue";
+import Header from "@/components/Header.vue";
 export default {
   components: {
-    Footer
+    Footer,
+    Header
   }
 };
 </script>
 
 <style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -31,17 +39,25 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
+header {
+  height: 20vh;
+  background: #333333;
+  color: white;
+  padding: 1em;
+}
+header a {
+  color: white;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+main {
+  min-height: calc(100vh  - 30vh);
+  padding: 1em;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+footer {
+  height: 10vh;
+  background: #333333;
+  color: white;
+  padding: 1em
 }
 </style>
