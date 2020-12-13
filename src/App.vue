@@ -50,7 +50,7 @@ header a {
 }
 
 main {
-  min-height: calc(100vh  - 30vh);
+  min-height: calc(100vh - 30vh);
   padding: 1em;
 }
 
@@ -58,6 +58,6 @@ footer {
   height: 10vh;
   background: #333333;
   color: white;
-  padding: 1em
+  padding: 1em;
 }
 </style>

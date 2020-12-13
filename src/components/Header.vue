@@ -1,14 +1,28 @@
 <template>
-    <div>
-        <img src="@/assets/logo.png" alt="">
-    </div>
+  <div><h2 class="glow">Rygaards</h2></div>
 </template>
 <script>
 export default {
-name: "Header"
-}
+  name: "Header"
+};
 </script>
 
 <style scoped>
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
 
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073, 0 0 80px #e60073;
+  }
+}
 </style>
